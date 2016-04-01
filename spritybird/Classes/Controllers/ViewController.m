@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Scene.h"
 #import "Score.h"
+#import <RevMobAds/RevMobAds.h>
 
 @interface ViewController ()
 @property (weak,nonatomic) IBOutlet SKView * gameView;
@@ -30,6 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [RevMobAds startSessionWithAppID:@"569d1272b38830772a5a628d" withSuccessHandler:^{
+        [[RevMobAds session] showBanner];
+    } andFailHandler:^(NSError *error) {
+        NSLog([NSString stringWithFormat:@"Erro: %@", error]);
+    }
+     ];
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     
 	// Configure the view.

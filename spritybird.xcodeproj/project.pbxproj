@@ -42,6 +42,13 @@
 		82C6A0BE18A6F53400FEBE9B /* spritybirdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C6A0BD18A6F53400FEBE9B /* spritybirdTests.m */; };
 		82C6A0CB18A6FF7400FEBE9B /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82C6A0CA18A6FF7400FEBE9B /* SpriteKit.framework */; };
 		82FEEB9418B550BF00AA6C66 /* Main-iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82FEEB9318B550BF00AA6C66 /* Main-iPad.storyboard */; };
+		B90DFE7B1CAE373700372138 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE7A1CAE373700372138 /* RevMobAds.framework */; };
+		B90DFE7D1CAE378900372138 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE7C1CAE378900372138 /* SystemConfiguration.framework */; };
+		B90DFE7F1CAE379D00372138 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE7E1CAE379D00372138 /* StoreKit.framework */; };
+		B90DFE811CAE37A600372138 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE801CAE37A600372138 /* MediaPlayer.framework */; };
+		B90DFE831CAE37AE00372138 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE821CAE37AE00372138 /* CoreLocation.framework */; };
+		B90DFE851CAE37B600372138 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE841CAE37B600372138 /* AVFoundation.framework */; };
+		B90DFE871CAE37BD00372138 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90DFE861CAE37BD00372138 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +110,13 @@
 		82C6A0E018A79B2400FEBE9B /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 		82C6A0E118A79B2400FEBE9B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		82FEEB9318B550BF00AA6C66 /* Main-iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main-iPad.storyboard"; sourceTree = "<group>"; };
+		B90DFE7A1CAE373700372138 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
+		B90DFE7C1CAE378900372138 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B90DFE7E1CAE379D00372138 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B90DFE801CAE37A600372138 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B90DFE821CAE37AE00372138 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B90DFE841CAE37B600372138 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B90DFE861CAE37BD00372138 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +124,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B90DFE871CAE37BD00372138 /* AdSupport.framework in Frameworks */,
+				B90DFE851CAE37B600372138 /* AVFoundation.framework in Frameworks */,
+				B90DFE831CAE37AE00372138 /* CoreLocation.framework in Frameworks */,
+				B90DFE811CAE37A600372138 /* MediaPlayer.framework in Frameworks */,
+				B90DFE7F1CAE379D00372138 /* StoreKit.framework in Frameworks */,
+				B90DFE7D1CAE378900372138 /* SystemConfiguration.framework in Frameworks */,
 				82C6A0CB18A6FF7400FEBE9B /* SpriteKit.framework in Frameworks */,
 				82C6A09518A6F53400FEBE9B /* CoreGraphics.framework in Frameworks */,
 				82C6A09718A6F53400FEBE9B /* UIKit.framework in Frameworks */,
 				82C6A09318A6F53400FEBE9B /* Foundation.framework in Frameworks */,
+				B90DFE7B1CAE373700372138 /* RevMobAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +204,13 @@
 		82C6A09118A6F53400FEBE9B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B90DFE861CAE37BD00372138 /* AdSupport.framework */,
+				B90DFE841CAE37B600372138 /* AVFoundation.framework */,
+				B90DFE821CAE37AE00372138 /* CoreLocation.framework */,
+				B90DFE801CAE37A600372138 /* MediaPlayer.framework */,
+				B90DFE7E1CAE379D00372138 /* StoreKit.framework */,
+				B90DFE7C1CAE378900372138 /* SystemConfiguration.framework */,
+				B90DFE7A1CAE373700372138 /* RevMobAds.framework */,
 				82C6A0CA18A6FF7400FEBE9B /* SpriteKit.framework */,
 				82C6A09218A6F53400FEBE9B /* Foundation.framework */,
 				82C6A09418A6F53400FEBE9B /* CoreGraphics.framework */,
@@ -544,6 +572,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "spritybird/Supporting Files/spritybird-Prefix.pch";
 				INFOPLIST_FILE = "spritybird/Supporting Files/spritybird-Info.plist";
@@ -560,6 +592,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "spritybird/Supporting Files/spritybird-Prefix.pch";
 				INFOPLIST_FILE = "spritybird/Supporting Files/spritybird-Info.plist";
