@@ -80,9 +80,8 @@ static bool wasted = NO;
     self.score = 0;
     scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Helvetica-Bold"];
     scoreLabel.text = @"0";
-    scoreLabel.fontSize = 500;
-    scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), 100);
-    scoreLabel.alpha = 0.2;
+    scoreLabel.fontSize = 20;
+    scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), 500);
     [self addChild:scoreLabel];
 }
 
@@ -232,12 +231,9 @@ static bool wasted = NO;
         // Score, adapt font size
         if(X(topPipe) + WIDTH(topPipe)/2 > bird.position.x &&
            X(topPipe) + WIDTH(topPipe)/2 < bird.position.x + FLOOR_SCROLLING_SPEED){
-            self.score +=1;
-            scoreLabel.text = [NSString stringWithFormat:@"%lu",self.score];
-            if(self.score>=10){
-                scoreLabel.fontSize = 340;
-                scoreLabel.position = CGPointMake(CGRectGetMidX(self.frame), 120);
-            }
+            self.score += [self desvio];
+            scoreLabel.text = [NSString stringWithFormat:@"%lu reais desviados",self.score];
+            scoreLabel.zPosition = 100000;
         }
     }
 }
@@ -255,4 +251,17 @@ static bool wasted = NO;
         [self.delegate eventWasted];
     }
 }
+
+#pragma mmark - hu3
+-(int) desvio {
+    return [self generateRandomNumberWithlowerBound:129 upperBound:452];
+}
+
+-(int) generateRandomNumberWithlowerBound:(int)lowerBound
+                               upperBound:(int)upperBound
+{
+    int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+    return rndValue;
+}
+
 @end

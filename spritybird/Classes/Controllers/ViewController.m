@@ -106,8 +106,8 @@
         }
         
         // Set scores
-        self.currentScore.text = F(@"%li",scene.score);
-        self.bestScoreLabel.text = F(@"%li",(long)[Score bestScore]);
+        self.currentScore.text = F(@"%li reais",scene.score);
+        self.bestScoreLabel.text = F(@"%li reais",(long)[Score bestScore]);
         
     } completion:^(BOOL finished) {
         flash.userInteractionEnabled = NO;
